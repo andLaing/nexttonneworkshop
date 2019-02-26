@@ -9,18 +9,46 @@
 
 \title{Aims of the NEXT-Tonne UT Arlington workshop}
 
-\input{src/aims_abstract.tex}
-
 \maketitle
 
+\input{src/aims_abstract.tex}
+
+\section{Introduction}
+A large mass NEXT-style detector would not only need to reach the required larger mass but significantly reduce expected backgrounds to be sensitive to effective masses over the whole parameter space allowed by the inverted hierarchy. In this workshop we will study the impact and feasibility of various changes to the materials and read-out technologies used with the aim of choosing baseline design(s) for more detailed study.
+
 \section{Learning from NEW and NEXT-100}
+In the current detectors the vessels are shielded from the lab using lead bricks which form a `castle' inside which air with reduced radon content is flowed. As we move to a greater mass of xenon, backgrounds induced by neutron interactions will become more important, as detailed in \cite{munozth:2018}. Placing the detector in a water tank will shield more effectively against neutrons but size and whether and how to instrument such a tank need to be studied in detail.
 
 \section{Design Ia: NEXT-500}
+The most basic imaginable large scale NEXT detector is a direct scale up of the current NEXT-100 design using the same technologies. This design has a number of possible problems:
+\begin{itemize}
+\item What coverage of PMTs is possible?
+\item What density of tracking plane is feasible?
+\item How can the radioactive budget be reduced?
+\end{itemize}
 
 \section{Design Ib: NEXT-SiPM}
+One way to significantly reduce expected radioactive budget is by replacing the PMTs with large surface area SiPMs without any other major geometrical changes. That is, still having separate planes for energy and topological reconstruction. The technological difficulties of this design would be:
+\begin{itemize}
+\item What level of DC is required for a reliable energy measurement?
+\item Is this technologically achievable?
+\item Can the SiPM response remain linear over the light levels necessary?
+\item Can S1 be efficiently detected?
+\end{itemize}
 
 \section{Design II: NEXT-SinglePlane}
+Another possible design would mix SiPMs of various surface areas in the plane behind the EL region where both energy and topology reconstructions will be performed. In this way the cathode side is free for use for other possible functions. This design suffers from the same problems as design {\bf Ib} with the solution of the linearity problem being even more crucial since light at the EL plane is more focused and intense.
 
 \section{Design III: NEXT-symmetric}
+A symmetric design with the same readout as design {\bf II} is also possible which would reduce the maximum drift for the same detector length. This design would have similar difficulties to the previous two.
+
+\section{Additional improvements}
+In basically all the designs mentioned above there are some additional technological additions that could improve light collection. The SiPM-wheel design would instrument the edges of the solid anode plate and collect internally reflected light.
+
+The light tube could also be directly instrumented, most likely using wavelength shifting fibres which would collect light and guide it either to behind the copper support plates or outside the detector. In this way the effect of any sensor used to read out the signal would have a significantly reduced impact on the active volume.
+
+
+\bibliographystyle{unsrt}
+\bibliography{refs}
 
 \end{document}
